@@ -30,7 +30,7 @@ else
     wget $url  -O /tmp/site_temp.txt > /dev/null 2>&1
 
     ### Encontrando as urls
-    cat site_temp.txt | grep "href" | grep "\." | cut -d '/' -f3 | cut -d '"' -f1 | grep -v 'link' | grep -v '<l' >> /tmp/temp.txt
+    cat /tmp/site_temp.txt | grep "href" | grep "\." | cut -d '/' -f3 | cut -d '"' -f1 | grep -v 'link' | grep -v '<l' >> /tmp/temp.txt
 
     ### Resolvendo os nomes 
     for i in $(cat /tmp/temp.txt)
