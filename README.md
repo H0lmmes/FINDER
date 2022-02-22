@@ -13,7 +13,7 @@ $ cd FINDER
 
 # FIND :)
 $ ./finder.sh url
-</h3>
+
 ```
 
 
